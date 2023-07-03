@@ -20,4 +20,11 @@ un utilisateur est identifié par :
 L'administrateur S'appelle root et a l'UId 0.
 
 Pour crée un utilisateur :
-* 
+* `useradd thierry`
+* commende complète : `useradd -m -d /home/thierry - /bin/bash thierry`
+
+  Pour crée un groupe apprents :
+  * `groupeadd apprenants`
+
+Pour ajouter thierry au groupe apprenants :
+ *  `usermod -aG apprenants thierry`
