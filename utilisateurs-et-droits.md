@@ -30,4 +30,4 @@ Pour ajouter thierry au groupe apprenants :
  *  `usermod -aG apprenants thierry`
 
 Pour afficher la liste des groupes de l'utilisateur thierry
-* ``
+* `groups thierry`
