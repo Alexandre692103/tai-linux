@@ -31,3 +31,6 @@ Pour ajouter thierry au groupe apprenants :
 
 Pour afficher la liste des groupes de l'utilisateur thierry
 * `groups thierry`
+
+Mise en pratique :
+* crée un utilisateur "webapp" groupe principal www-data groupe secondaire applis dossier principal //home/system/webapp shell /bin/false
