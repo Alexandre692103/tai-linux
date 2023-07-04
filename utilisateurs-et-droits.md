@@ -58,6 +58,15 @@ sudo useradd -m -d /home/system/webapp -g www-data -G applis -N -s /bin/false we
     6. Vérifier que le a bien récupéré le groupe : `groups hb`
     7. Couper complèment la session root + la session hb (fermer la connexion SSH) puis se reconnecter.
     8. Rechercher puis appliquer les mise à jour :
-    ```bash
-
-    ```
+```bash
+`sudo apt update`
+pour mettre à jour un seul paquet, par exemple apache2:
+sudo apt install apache2
+#pour mettre à jour tous le paquets :
+sudo apt upgrade
+```
+# pour désinstaller mais garder les fichiers de config, par exemple apache2
+sudo apt remove apache2
+# pour désinstaller complètement :
+sudo apt purge apage2
+```
