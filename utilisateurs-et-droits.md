@@ -34,7 +34,9 @@ Pour afficher la liste des groupes de l'utilisateur thierry
 
 Mise en pratique :
 * crée un utilisateur "webapp" groupe principal www-data groupe secondaire applis dossier principal //home/system/webapp shell /bin/false
-user webapp
-groupe www-data
-groupe applis
-dossier /home/system/webapp
+```bash
+sudo mkdir /home/system
+sudo groupadd www-data
+sudo groupadd applis
+sudo useradd -m -d /home/system/webapp -g www-data -G applis -N -s /bin/false webapp
+```
